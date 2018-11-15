@@ -13,6 +13,9 @@ import com.justin.memaggregator.dto.MemAggregationDto;
 public class MemInitializer implements Initializer<MemAggregationDto> {
   @Override
   public MemAggregationDto apply() {
-    return new MemAggregationDto();
+    final MemAggregationDto dto = new MemAggregationDto();
+    dto.setTotalCount(0);
+    dto.setTotalMemUsage(0f);
+    return dto;
   }
 }

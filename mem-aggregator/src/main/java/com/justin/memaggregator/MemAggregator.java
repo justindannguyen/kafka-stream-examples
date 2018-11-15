@@ -43,6 +43,9 @@ public class MemAggregator implements Aggregator<String, String, MemAggregationD
       if (aggregate.getMinMemUsage() > inputUsage) {
         aggregate.setMinMemUsage(inputUsage);
       }
+      aggregate.setTotalCount(aggregate.getTotalCount() + 1);
+      aggregate.setTotalMemUsage(aggregate.getTotalMemUsage() + inputUsage);
+      aggregate.setAvgMemUsage(aggregate.getTotalMemUsage() / aggregate.getTotalCount());
       return aggregate;
     } catch (final IOException ex) {
       throw new RuntimeException("Can't parse the input Dto", ex);

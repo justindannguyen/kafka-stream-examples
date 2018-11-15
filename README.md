@@ -1,8 +1,8 @@
-# Kafka Stream Usecases
+# Kafka Stream Use-cases
 
 ## Real-time Data Aggregation
 This video will show you how to use Spring Cloud Stream + Kafka to aggregate min, max based on windowed-event-time in the fast ways (real-time).
-As long as data arrives in your data ingestion platform, it will be aggregate immediately, even with the late arriving records.
+As long as data arrives in your data ingestion platform, it will be aggregated immediately, even with the late arriving records.
 It will help us to resolve 4 common problem with typical batch processing: real-time, accuracy with late arriving records, scalability/no performance issues with db query, alerts. 
 
 ### References:
@@ -11,6 +11,19 @@ It will help us to resolve 4 common problem with typical batch processing: real-
 * Kafka: https://kafka.apache.org/
 * Spring Cloud Stream: https://cloud.spring.io/spring-cloud-stream/
 * Github Link: mem-aggregator
+
+## Real-time Data Analytics
+This video will show you how to do data analytics using Spring Cloud Stream + Kafka.
+As long as data arrives in your data ingestion platform, it will be analyzed immediately, even with the late arriving records.
+It will help us to resolve 4 common problem with typical batch processing: real-time, accuracy with late arriving records, scalability/no performance issues with db query, alerts. 
+
+### References:
+* Youtube: https://youtu.be/wJAHvCnkt1A
+* Kafka: https://kafka.apache.org/
+* Spring Cloud Stream: https://cloud.spring.io/spring-cloud-stream/
+* MongoDB: https://www.mongodb.com/
+* Github Link: mem-analytics
+
 
 ## Licenses
 Copyright (c) 2018 Justin Nguyen

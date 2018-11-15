@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2018, Justin Nguyen
  */
-package com.justin.memaggregator.dto;
+package com.justin.memanalytics.dto;
 
 /**
  * @author tuan3.nguyen@gmail.com
